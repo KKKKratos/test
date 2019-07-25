@@ -77,5 +77,5 @@ p {
 .content {
   float: left;
   margin-left: 680px;
-}
+} 
 </style>
