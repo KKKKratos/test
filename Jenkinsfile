@@ -7,5 +7,10 @@ pipeline {
         sh 'cnpm run build'
       }
     }
+    stage('Deploy') {
+      steps {
+        sh '/root/downloads/build.exp'
+      }
+    }
   }
 }
