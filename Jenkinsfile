@@ -9,7 +9,8 @@ pipeline {
     }
     stage('Deploy') {
       steps {
-        sh '/root/downloads/build.exp'
+        sh '''chmod 777 /root/downloads/build.exp
+/root/downloads/build.exp'''
       }
     }
   }
