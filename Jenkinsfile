@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('Clone code') {
+    stage('Build') {
       steps {
-        git(url: 'https://github.com/oocl-kratos/test.git', branch: 'master', changelog: true)
+        sh 'npm run build'
       }
     }
   }
