@@ -1,14 +1,10 @@
 pipeline {
   agent any
   stages {
-    stage('Build') {
+    stage('Build and Deploy') {
       steps {
         sh 'cnpm install'
         sh 'cnpm run build'
-      }
-    }
-    stage('Deploy') {
-      steps {
         sh '/root/downloads/build.exp'
       }
     }
